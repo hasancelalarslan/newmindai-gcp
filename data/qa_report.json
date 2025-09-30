@@ -1,0 +1,13 @@
+{
+  "topics_raw": 4024,
+  "opinions_raw": 9747,
+  "conclusions_raw": 3351,
+  "topics_clean": 3920,
+  "opinions_clean": 9493,
+  "conclusions_clean": 3343,
+  "split_counts": {
+    "train": 7580,
+    "val": 979,
+    "test": 934
+  }
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package integration;
+
+service CommentService {
+  rpc AnalyzeComment (CommentRequest) returns (CommentResponse);
+}
+
+message CommentRequest {
+  string comment_id = 1;
+  string topic_text = 2;
+  string comment_text = 3;
+}
+
+message CommentResponse {
+  string comment_id = 1;
+  string classification = 2;
+  string matched_topic = 3;
+  string conclusion = 4;
+}

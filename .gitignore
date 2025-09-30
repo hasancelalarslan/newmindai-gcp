@@ -1,0 +1,58 @@
+#  Virtual Environments
+.venv/
+env/
+venv/
+
+#  Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+#  OS-Specific
+.DS_Store
+Thumbs.db
+
+#  Logs & Temp Files
+*.log
+*.out
+*.err
+*.txt~
+*.tmp
+
+
+
+#  Model Artifacts / Checkpoints
+artifacts/
+results/**/checkpoint-*/
+results/**/final_model/
+results/**/*.safetensors
+results/**/*.bin
+results/**/*.pth
+results/**/*.pt
+results/**/*.zip
+
+*.pickle
+*.pkl
+*.npy
+*.npz
+*.ckpt
+*.onnx
+
+#  Keep metrics & evaluation results
+!results/**/*.csv
+!results/**/*.json
+
+#  Build / Packaging
+build/
+dist/
+*.egg-info/
+
+# Secrets / Env Files
+*.env
+*.jsonl
+
+# Other 
+*.bak
+*.swp

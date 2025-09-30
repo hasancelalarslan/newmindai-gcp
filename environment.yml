@@ -1,0 +1,14 @@
+name: newmindai
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=12.1
+  - faiss-gpu=1.8.0
+  - pip
+  - pip:
+      - -r requirements.txt

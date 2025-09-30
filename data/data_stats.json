@@ -1,0 +1,29 @@
+{
+  "topics": {
+    "rows": 3920,
+    "avg_len": 19.131122448979593,
+    "min_len": 5,
+    "max_len": 95,
+    "langs": {
+      "en": 3920
+    }
+  },
+  "opinions": {
+    "rows": 9493,
+    "avg_len": 50.6043400400295,
+    "min_len": 5,
+    "max_len": 682,
+    "langs": {
+      "en": 9493
+    }
+  },
+  "conclusions": {
+    "rows": 3343,
+    "avg_len": 59.25575830092731,
+    "min_len": 5,
+    "max_len": 257,
+    "langs": {
+      "en": 3343
+    }
+  }
+}

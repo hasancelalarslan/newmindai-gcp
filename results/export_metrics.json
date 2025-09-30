@@ -1,0 +1,18 @@
+{
+  "total_records": 200,
+  "classification_distribution": {
+    "Claim": 84,
+    "Evidence": 82,
+    "Counterclaim": 17,
+    "Rebuttal": 17
+  },
+  "unique_matched_topics": 160,
+  "avg_conclusion_length_words": 66.765,
+  "top5_topics_by_opinions": {
+    "BAC30ACCEEFF": 6,
+    "60848B9FED16": 4,
+    "51CCAD86D2F2": 3,
+    "CC02E6A858C4": 3,
+    "FC1196671EE9": 3
+  }
+}

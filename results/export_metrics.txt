@@ -1,0 +1,20 @@
+📊 Export Metrics Summary
+========================================
+Total records: 200
+
+Classification distribution:
+  Claim       : 84
+  Evidence    : 82
+  Counterclaim: 17
+  Rebuttal    : 17
+
+Unique matched topics: 160
+
+Average conclusion length: 66.77 words
+
+Top 5 topics by number of matched opinions:
+  BAC30ACCEEFF: 6
+  60848B9FED16: 4
+  51CCAD86D2F2: 3
+  CC02E6A858C4: 3
+  FC1196671EE9: 3

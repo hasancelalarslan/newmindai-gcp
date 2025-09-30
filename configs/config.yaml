@@ -1,0 +1,76 @@
+paths:
+  raw_dir: data
+  interim_dir: data/interim
+  processed_dir: data/processed
+  artifacts_dir: artifacts
+  results_dir: results   
+
+preprocess:
+  locale: tr_TR
+  placeholders:
+    url: true
+    mention: true
+    hashtag: true
+    emoji: true
+  filters:
+    min_tokens: 5
+    allowed_langs: ["en"]   
+  dedup:
+    exact: true
+    near_dup: false
+    near_dup_threshold: 0.9
+
+split:
+  strategy: topic
+  train: 0.8
+  val: 0.1
+  test: 0.1
+  seed: 42
+
+evaluation:
+  qa_targets:
+    max_unk_ratio: 0.05
+    max_exact_dup_ratio: 0.03
+
+
+arg_classifier:
+  model_name: "microsoft/deberta-v3-base"
+  batch_size: 32
+  epochs: 4
+  learning_rate: 2e-5
+  max_len: 256
+
+
+  use_class_weights: true        
+  weight_strategy: "inv_freq"    
+
+conclusion_generator:
+  model_name: "mistralai/Mistral-7B-Instruct-v0.2"
+  temperature: 0.6
+  top_p: 0.9
+  max_opinions_per_topic: 8
+  per_opinion_char_limit: 220
+  max_tokens: 150 
+
+
+
+topic_matching:
+  # stronger embedding model
+  retriever_model: "sentence-transformers/all-mpnet-base-v2"
+  # alternatives embeddings model you can switch to
+  alt_retrievers:
+    - "intfloat/e5-large-v2"
+    - "multi-qa-mpnet-base-dot-v1"
+  #  Reranker 
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  use_reranker: true
+
+  #  Retrieval 
+  use_faiss: true         
+  faiss_gpu: true          
+  topk_retrieve: 100       
+  topk_rerank: 20          
+
+  batch_size: 64
+  rerank_batch_size: 64
+
