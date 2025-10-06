@@ -11,9 +11,7 @@ Bu proje, sosyal medya yorumlarını analiz etmek amacıyla geliştirilmiş uçt
 - Event-driven Integration: gRPC server, RabbitMQ ve PostgreSQL tabanlı gerçek zamanlı işleme.  
 
 ## 📊 Özet Sonuçlar  
-- Topic Matching: Recall@20 ≈ %18–19, MRR ≈ 0.064–0.066  
 - Argument Classifier: Accuracy ≈ %80 (özellikle Claim/Evidence sınıflarında güçlü performans)  
-- Conclusion Evaluation: Rouge1 ≈ 0.19, BLEU ≈ 0.01, BERTScore F1 ≈ 0.11, stance accuracy ≈ %27  
 - Event-driven Entegrasyon: 200 kayıtlık örnek başarıyla sınıflandırılmış, eşleştirilmiş ve özetlenmiştir.  
 
 ## 📂 Proje Yapısı  
