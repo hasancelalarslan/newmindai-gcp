@@ -2,6 +2,7 @@ paths:
   raw_dir: data
   interim_dir: data/interim
   processed_dir: data/processed
+  artifacts_dir: data/artifacts
   results_dir: results   
 
 preprocess:
@@ -62,12 +63,12 @@ topic_matching:
     - "multi-qa-mpnet-base-dot-v1"
   #  Reranker 
   reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
-  use_reranker: true
+  use_reranker: false
 
   #  Retrieval 
   use_faiss: true         
   faiss_gpu: true          
-  topk_retrieve: 100       
+  topk_retrieve: 50       
   topk_rerank: 20          
 
   batch_size: 64
